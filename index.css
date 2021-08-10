@@ -1,0 +1,78 @@
+@font-face {
+  font-family: fonte-brush;
+  src: url(fonte-brush2.otf);
+}
+
+* {
+  margin: 0;
+}
+body{
+  background-color: #f8f8f8;
+  color: #00030f;
+}
+
+#main{
+  display: inline;
+  width: 100vw;
+}
+
+#home{
+  margin-bottom: 20vh;
+}
+
+#sobre{
+  width: 25vw;
+  display: inline-block;
+}
+
+#titulo{
+    font-family: fonte-brush;
+    font-size: 7vw;
+    padding-left: 1vw;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+}
+
+#titulo2{
+    font-family: fonte-brush;
+    font-size: 4vw;
+    padding-left: 1vw;
+    font-weight: bold;
+}
+
+.paddingImportante{
+  padding: 1vw 3vw;
+}
+
+#texto-header ul{
+  list-style: none;
+  display:inline;
+}
+
+#texto-header ul li{
+  font-family: fonte-brush;
+  font-size: 2vw;
+  display:inline-block;
+  padding: 2vw 1vw;
+  font-weight: bold;
+  float: right;
+}
+
+
+a.active{
+  border-bottom: 2px solid black;
+}
+
+.linha{
+
+}
+
+
+
+
+
+a:-webkit-any-link{
+  text-decoration: none;
+  color: #00030f;
+}

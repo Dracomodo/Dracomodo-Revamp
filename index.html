@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dracomodo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="home">
+      <span id="titulo" display="inline-block;">
+        Dracomodo
+      </span>
+      <div id="texto-header">
+        <ul class="">
+          <li><a href="#carouselExampleIndicators" data-slide-to=2 class="linha">Sobre nós</a></li>
+          <li><a href="#carouselExampleIndicators" data-slide-to=1 class="linha">Conheça nossos projetos</a></li>
+          <li><a href="#carouselExampleIndicators" data-slide-to=0 class="active linha">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="paddingImportante">
+              <h2 id="titulo2">Quem somos?</h2>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <h2 id="titulo2">Peixe</h2>
+        </div>
+        <div class="carousel-item">
+        <h2 id="titulo2">Morte?</h2>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $('.carousel').carousel({
+        interval: false,
+      });
+      var buttons = document.getElementsByTagName("a");
+
+      function setActive(el) {
+        for (var i = 0; i < buttons.length; i++) {
+            if (buttons[i] == el) {
+              el.classList.add("active");
+            } else {
+              buttons[i].classList.remove('active');
+            }
+          }
+      }
+
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function() {
+          setActive(this);
+        });
+      }
+    </script>
+</html>
